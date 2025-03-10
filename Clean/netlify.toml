@@ -1,7 +1,7 @@
 [build]
-  command = "npm run build"  # Or whatever build command you use
-  publish = "build"  # Or wherever your frontend build outputs to
-  functions = "server"  # Points to your serverless functions folder
+  command = "npm run build"
+  publish = "dist"  # This should be 'dist' for Vite projects
+  functions = "server"
 
 [functions]
   node_bundler = "esbuild"
