@@ -1,0 +1,12 @@
+[build]
+  command = "npm run build"  # Or whatever build command you use
+  publish = "build"  # Or wherever your frontend build outputs to
+  functions = "server"  # Points to your serverless functions folder
+
+[functions]
+  node_bundler = "esbuild"
+
+# Scheduled function that runs every minute
+[[functions]]
+  schedule = "* * * * *"
+  path = "/process-webhooks" 

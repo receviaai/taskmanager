@@ -1,0 +1,9 @@
+{
+  "name": "webhook-processor",
+  "version": "1.0.0",
+  "description": "Serverless webhook processor for task manager",
+  "dependencies": {
+    "@supabase/supabase-js": "^2.31.0",
+    "node-fetch": "^3.3.0"
+  }
+} 
